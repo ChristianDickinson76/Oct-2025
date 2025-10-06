@@ -8,7 +8,7 @@ def converter(userinput, convtype):
     elif convtype == 'hex-dec':
         print(("Dec: " + str(int(userinput, 16))))
         return int(userinput, 16)
-    elif convtype == 'bin-dec':asjdakjs dkja s
+    elif convtype == 'bin-dec':
         print("Decimal: " + str(int(userinput, 2)))
         return int(userinput,2)
     else:
