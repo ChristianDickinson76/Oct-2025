@@ -54,3 +54,29 @@ match _userInput:
         _listNumbers.sort()
         _listNumbers.reverse()
         print(f"The largest number entered was {_listNumbers[0]}")
+    
+    case "7":
+        _userInput = input("Please enter a list of numbers, seperated by ,\n")
+        _listNumbers = _userInput.split(",")
+        sorted = False
+        i = 0
+        swapped = False
+        while(not sorted):
+            #Compare current number with adjacent number
+            if (i + 1 < len(_listNumbers)):
+                _currentNumber = _listNumbers[i]
+                _nextNumber = _listNumbers[i + 1]
+                if _currentNumber > _nextNumber:
+                    _listNumbers[i] = _nextNumber
+                    _listNumbers[i+1] = _currentNumber
+                    swapped = True
+                i = i + 1
+            elif (i + 1 == len(_listNumbers)):
+                i = 0
+                if(swapped == False):
+                    sorted = True
+                else:
+                    swapped = False
+                
+        
+        print (f"In ascending order, the list is {_listNumbers}")
