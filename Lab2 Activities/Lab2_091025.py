@@ -14,7 +14,7 @@ match _userInput:
         else:
             print("You cannot enter")
     case "3":
-        _userInput = input("What is the weather like?\n1 ~ Sunny\n2 ~ Rainy\n3 ~ Other\n ").capitalize()
+        _userInput = input("What is the weather like?\n1 ~ Sunny\n2 ~ Rainy\n3 ~ Other\n")
         if(_userInput == "1"):
             print("Go outside")
         elif (_userInput == "2"):
