@@ -8,7 +8,7 @@
 """
 
 import random
-#aduashdiuasb
+
 while True:
     _randomNumber = random.randint(0, 100)
     _userInput = input("Please enter a number between 0 and 100, inclusive: ")
