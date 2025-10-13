@@ -18,7 +18,7 @@ glEnable(GL_LIGHT0)
 glEnable(GL_COLOR_MATERIAL)
 glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE)
 
-gluPerspective(45, (width / height), 0.1, 50.0)
+gluPerspective(90, (width / height), 0.1, 50.0)
 glTranslatef(0.0, 0.0, -5)
 
 # Set up lighting
