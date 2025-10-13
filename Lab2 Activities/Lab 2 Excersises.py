@@ -58,14 +58,14 @@ match _userInput:
     case "7":
         _userInput = input("Please enter a list of numbers, seperated by ,\n")
         _listNumbers = _userInput.split(",")
-        sorted = False
+        #sorted = False
         i = 0
         swapped = False
-        while(not sorted):
+        while(True):
             #Compare current number with adjacent number
             if (i + 1 < len(_listNumbers)):
-                _currentNumber = _listNumbers[i]
-                _nextNumber = _listNumbers[i + 1]
+                _currentNumber = int(_listNumbers[i])
+                _nextNumber = int(_listNumbers[i + 1])
                 if _currentNumber > _nextNumber:
                     _listNumbers[i] = _nextNumber
                     _listNumbers[i+1] = _currentNumber
@@ -74,7 +74,8 @@ match _userInput:
             elif (i + 1 == len(_listNumbers)):
                 i = 0
                 if(swapped == False):
-                    sorted = True
+                    break
+                    #sorted = True
                 else:
                     swapped = False
                 
