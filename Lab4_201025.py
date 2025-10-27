@@ -77,15 +77,15 @@ match _userInput:
             ["November", 30],
             ["December", 31]
         ]
-        
+
         if(_userInput % 4 == 0 and (_userInput % 100 != 0 or _userInput % 400 == 0)):
             _monthDays[1][1] = 29
         for i in range (1, 13):
-            day = 0
             print(f"\n{_monthDays[i-1][0]}")
             print("Mon Tue Wed Thu Fri Sat Sun")
             for j in range (0, math.ceil(_monthDays[i-1][1] / 7)):
                 for k in range (0, 7):
+                    _end = 7;
                     if(j*7+(k+1) <= _monthDays[i-1][1]):
                         print(f"{j * 7 + (k+1):03}", end = " ")
                     else:
