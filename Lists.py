@@ -26,4 +26,4 @@ match _userInput:
             for num in _numberArray:
                 if(int(num[0]) == i):
                     print(f"{int(num[1])} ", end = "")
-            print("")   
+            print("")
